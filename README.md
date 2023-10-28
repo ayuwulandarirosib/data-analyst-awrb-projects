@@ -1,65 +1,70 @@
-# Y.Music: Music Preferences among 'Springfield' and 'Shelbyville' Analysis
+# Borrower's Default Risk Analysis
 ## by _Ayu Bachtiar_
 
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
-This is my project Number _One_.
+This is my project Number _Two_.
 Follow my Instagram: @shakeilogram
 ✨Follow aja dulu!
 
 ## Features ✨
-> Whenever we do an analysis, 
-> we need to formulate some hypotheses that we need to test further.
-> Sometimes, the tests we do lead us to accept the hypothesis,
-> other times we also need to reject it.
-> To make the right decisions in business, 
-> we must understand whether 
-> the assumptions we make are correct or not.
+> We are going to prepare a report for the credit division of a bank.
+> We will find out the effect of a customer's marital status
+> and the number of children they have
+> on the probability of default in repaying the loan.
+> The bank already has some data
+> regarding the creditworthiness of customers.
 
 ## Introduction
-In this project, we will compare the music preferences of users in the cities of 'Springfield' and 'Shelbyville'. We will study the actual Y.Music data to test the hypotheses below and compare the users behavior in these two cities.
+This report will be taken into consideration when making credit assessments for prospective customers. Credit scoring is used to evaluate the ability of potential borrowers to repay their loans.
 
 ## Goal
-In this Y.Music project, we will test three hypotheses, namely:
-1. User activity varies depending on the day and city.
-2. On Monday mornings, the residents of 'Springfield' and 'Shelbyville' tune into different genres. This also applies on Friday nights.
-3. Listeners in 'Springfield' and 'Shelbyville' have different preferences. In 'Springfield', the users prefer to pop music, while in 'Shelbyville' the rap music has more fans.
+In this project we will analyze several concerns, those are: 
+1. Is there any relationships among having children and the probability of a person defaulting on a loan?
+2. Is there any relationships among marital status and the probability of a person defaulting on a loan?
+3. Is there any relationships among the level of income and the probability of a person defaulting on a loan?
+4. How do different loan objectives affect a person's probability of defaulting on a loan?
 
 ## Stages
 There are several steps to complete this project, namely:
-1. Data Overview (Step 1. Downloading Database and Loading The Data)
+1. Data Pre-processing (Step 1. Downloading and Loading The Data)
 In this stage, we will download and load the dataset from the following file path:
 
-    '/datasets/music_project_en.csv'
+    /datasets/credit_scoring_eng.csv
 
-    Here are the data descriptions of the file path above:
-- 'userID' — user id
-- 'Track' — track title
-- 'artist' — artist name
-- 'genre' — music genres
-- 'City' — the city where the user is located
-- 'time' — the length of time the song is played
-- 'Day' — the day of the week
+    Here are the data descriptions of the file path above that contains:
+- 'children' - the number of children in the family
+- 'days_employed' - how long the customers has been working
+- 'dob_years' - customers age
+- 'education' - customers education level
+- 'educationid' - identifier for the customers' education level
+- 'family_status' - customers' marital status
+- 'family_status_id' - identifier for the customer's marital status
+- 'gender' - customers gender
+- 'income_type' - type of customers income
+- 'debt' - Have the customers ever defaulted on a loan?
+- 'total_income' - monthly income
+- 'purpose' - reasons for taking out a loan
 
-2. Data Pre-processing (Step 2. Exploring and Rectifying the Data)
+2. Data Processing (Step 2. Processing and Exploring the Data)
+In this stage, we will process and explore the data by reading and capturing its point of views.
+
+3. Data Transformation (Step 3. Digging The Certain Information through Data Transformation)
+In this stage, we will digg the certain informations by taking a look at each columns to see what cases they might have.
+
+4. Explorative Data Analysis (EDA) (Step 4. Performing Several Focus Things to be Analyzed)
 In this stage, there are several things that need to be our focus, namely:
+- Is there any relationships among having children and the probability of a person defaulting on a loan?
+- Is there any relationships among marital status and the probability of a person defaulting on a loan?
+- Is there any relationships among the level of income and the probability of a person defaulting on a loan?
+-  How do different the loan objectives affect a person's probability of defaulting on a loan?
 
-- Title Writing Style
-- Missing Values
-- Data Duplicates
+5. Presentation (Step 5. Presenting My Project to The Viewers)
+In this stage, we will prepare for the presentation of the project.
 
-3. Hypotheses Test (Step 3. Performing The Hypotheses Testing)
-In this stage, we will perform the following Hypotheses Testing, namely:
-- User activity varies depending on the day and city.
-- On Monday mornings, the residents of 'Springfield' and 'Shelbyville' tune into different genres. This also applies on Friday nights.
-- Listeners in 'Springfield' and 'Shelbyville' have different preferences. In 'Springfield', the users prefer to pop music, while in 'Shelbyville' the rap music has more fans.
-
-4. Presentation (Step 4. Presenting My Project to The Viewers)
-In this stage, I will present for my Project Presentation related to Music Preferences among 'Springfield' and 'Shelbyville' analysis.
-
-5. General Conclusions (Step 5. Formulating General Conclusions)
-In this stage, we will draw the whole of general conclusions.
+6. General Conclusions (Step 6. Formulating General Conclusions)
+In this stage, we will draw and formulate the conclusions.
 
 ## library
 _pandas_
