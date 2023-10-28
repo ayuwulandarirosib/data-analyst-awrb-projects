@@ -1,65 +1,54 @@
-# Y.Music: Music Preferences among 'Springfield' and 'Shelbyville' Analysis
+# Trending Video Analysis Dashboard on YouTube
 ## by _Ayu Bachtiar_
 
 [![Made withJupyter](https://img.shields.io/badge/Made%20with-Jupyter-orange?style=for-the-badge&logo=Jupyter)](https://jupyter.org/try)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
-This is my project Number _One_.
+This is my project Number _Eleven_.
 Follow my Instagram: @shakeilogram
 ✨Follow aja dulu!
 
-## Features ✨
-> Whenever we do an analysis, 
-> we need to formulate some hypotheses that we need to test further.
-> Sometimes, the tests we do lead us to accept the hypothesis,
-> other times we also need to reject it.
-> To make the right decisions in business, 
-> we must understand whether 
-> the assumptions we make are correct or not.
+## Arrangements ✨
+> This project is packaged in a ZIP archive file format,
+> with an archive size not exceeding 9 megabytes.
+> File with data uploaded to dashboard _(trending_by_time.csv)_.
+> Link to dashboard on Tableau Public server.
+> Link to dashboard on Tableau Public server.
+> Instructions on how to run all files (readme.txt).
 
 ## Introduction
-In this project, we will compare the music preferences of users in the cities of 'Springfield' and 'Shelbyville'. We will study the actual Y.Music data to test the hypotheses below and compare the users behavior in these two cities.
+It is about Dashboard, steps need to be taken to design and create a dashboard. The necessity is by discussing the content of it, its layout, and the data that should be displayed. Then, converse to database administrators and data engineers to find out where and how to collect the needed data, including how to change it. Also ask them where the aggregate table is stored. Finally, develop the pipeline and dashboard.
 
 ## Goal
-In this Y.Music project, we will test three hypotheses, namely:
-1. User activity varies depending on the day and city.
-2. On Monday mornings, the residents of 'Springfield' and 'Shelbyville' tune into different genres. This also applies on Friday nights.
-3. Listeners in 'Springfield' and 'Shelbyville' have different preferences. In 'Springfield', the users prefer to pop music, while in 'Shelbyville' the rap music has more fans.
+Yes, we need to discuss the dashboard draft and technical requirements with managers. After that, we will meet the administrator. Compiling the code for the dashboard is the last thing that needs to be done.
 
-## Stages
-There are several steps to complete this project, namely:
-1. Data Overview (Step 1. Downloading Database and Loading The Data)
-In this stage, we will download and load the dataset from the following file path:
+## Technical Guidelines
+- Business objective: analyzing the history of trending videos on YouTube
+- Targeted dashboard users: video ads planning managers
+- Dashboard data content:
+    a. Videos that have been trending, grouped by day and category
+    b. Trending videos, grouped by country
+    c. Table linking categories and countries
 
-    '/datasets/music_project_en.csv'
+## Parameters used to group data
+- Trending date and time
+- Video category
+- Country
 
-    Here are the data descriptions of the file path above:
-- 'userID' — user id
-- 'Track' — track title
-- 'artist' — artist name
-- 'genre' — music genres
-- 'City' — the city where the user is located
-- 'time' — the length of time the song is played
-- 'Day' — the day of the week
+## Data
+- Trending history — absolute values ​​divided by days (two charts: absolute value and percentage ratio)
+- Sessions, grouped by country — relative value (% of sessions)
+- Relationship between categories and countries — absolute values ​​(table)
+- Significance: all charts are equally important
+- Data source for the dashboard: the data engineer will create an aggregate table named trending_by_time. Here is the structure:
+    a. _record_id_ — primary key
+    b. _region_ — country/geographical area
+    c. _trending_date_ — date and time
+    d. _category_title_ — video category
+    e. _videos_count_ — number of videos in the trending segment
+- Graphics, dashboard controls, and their layout
 
-2. Data Pre-processing (Step 2. Exploring and Rectifying the Data)
-In this stage, there are several things that need to be our focus, namely:
+## libraries
+_dashboard_
+_pipeline_
 
-- Title Writing Style
-- Missing Values
-- Data Duplicates
-
-3. Hypotheses Test (Step 3. Performing The Hypotheses Testing)
-In this stage, we will perform the following Hypotheses Testing, namely:
-- User activity varies depending on the day and city.
-- On Monday mornings, the residents of 'Springfield' and 'Shelbyville' tune into different genres. This also applies on Friday nights.
-- Listeners in 'Springfield' and 'Shelbyville' have different preferences. In 'Springfield', the users prefer to pop music, while in 'Shelbyville' the rap music has more fans.
-
-4. Presentation (Step 4. Presenting My Project to The Viewers)
-In this stage, I will present for my Project Presentation related to Music Preferences among 'Springfield' and 'Shelbyville' analysis.
-
-5. General Conclusions (Step 5. Formulating General Conclusions)
-In this stage, we will draw the whole of general conclusions.
-
-## library
-_pandas_
