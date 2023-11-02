@@ -1,4 +1,5 @@
-# Hello 👋. Thank you for considering my artistic opus. This is my List Portfolio of Data Analytics _**Part One**_
+## Hello 👋. Thank you for considering my artistic opus.
+## This is my List Portfolio of Data Analytics _**Part One**_
 
 ## by _Ayu Bachtiar_
 
